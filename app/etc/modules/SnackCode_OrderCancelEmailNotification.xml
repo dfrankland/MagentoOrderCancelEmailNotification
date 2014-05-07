@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <SnackCode_OrderCancelEmailNotification>
+            <active>true</active>
+            <codePool>community</codePool>
+        </SnackCode_OrderCancelEmailNotification>
+    </modules>
+</config>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <SnackCode_OrderCancelEmailNotification>
+            <version>1.0.0.0</version>
+        </SnackCode_OrderCancelEmailNotification>
+    </modules>
+    <global>
+        <models>
+            <snackcode_ordercancelemailnotification>
+                <class>SnackCode_OrderCancelEmailNotification_Model</class>
+            </snackcode_ordercancelemailnotification>
+        </models>
+        <events>
+            <order_cancel_after>
+                <observers>
+                    <snackcode_ordercancelemailnotification>
+                        <class>SnackCode_OrderCancelEmailNotification_Model_Observer</class>
+                        <method>orderCancelNotification</method>
+                    </snackcode_ordercancelemailnotification>
+                </observers>
+            </order_cancel_after>
+        </events>
+    </global>
+</config>
