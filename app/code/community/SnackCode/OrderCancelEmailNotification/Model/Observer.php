@@ -34,7 +34,7 @@ class SnackCode_OrderCancelEmailNotification_Model_Observer
         $body = 'Order #'.$orderId.' Was Cancelled. Do not ship.';
         sendEmail($subject,$body);
         Mage::log($oid.$subject,Zend_Log::DEBUG,'OrderCancelEmailNotification.log',true);
-        $order->addStatusHistoryComment('Cancel Email Sent to '.Mage::getStoreConfig('trans_email/ident_support/email'), true);
+        $order->addStatusHistoryComment('Cancellation email sent to '.Mage::getStoreConfig('trans_email/ident_support/email'), true);
         
         return $this;
     }
